@@ -1,0 +1,102 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .calculator {
+            background-color: #1e1e2e;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            overflow: hidden;
+        }
+        
+        .display {
+            background-color: #2d3047;
+            color: white;
+            text-align: right;
+            padding: 25px 20px;
+            font-size: 2.5rem;
+            min-height: 120px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            padding: 20px;
+        }
+        
+        button {
+            border: none;
+            border-radius: 12px;
+            padding: 18px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        button:active {
+            transform: scale(0.95);
+        }
+        
+        .number, .decimal {
+            background-color: #3a3e5b;
+            color: white;
+        }
+        
+        .number:hover, .decimal:hover {
+            background-color: #4a4f73;
+        }
+        
+        .operator {
+            background-color: #ff9500;
+            color: white;
+        }
+        
+        .operator:hover {
+            /* background-color: #ffaa33; */
+        }
+        
+        .equals {
+            /* background-color: #ff9500; */
+            color: white;
+        }
+        
+        .equals:hover {
+            /* background-color: #ffaa33; */
+        }
+        
+        .clear, .backspace {
+            background-color: #a5a5a5;
+            color: black;
+        }
+        
+        .clear:hover, .backspace:hover {
+            background-color: #bdbdbd;
+        }
+        
+        .zero {
+            grid-column: span 2;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 15px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
